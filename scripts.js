@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let islem1 = document.getElementById("islem1");
     let islem2 = document.getElementById("islem2");
     let islem3 = document.getElementById("islem3");
+    
     let sonIslemler = [islem1, islem2, islem3];
 
     let butonlar = document.querySelectorAll(".buton-kutucugu button");
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let sonIslemlerDiv = document.getElementById("sonIslemler");
 
     temaDegistir.addEventListener("change", function() {
+        
         document.body.classList.toggle("lacivert-tema");
         document.body.classList.toggle("krem-tema");
     });
@@ -31,11 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     anaEkran.textContent += this.textContent;
                 }
             } else if (this.classList.contains("islem")) {
-                // Önceki karakterin bir işlem olmadığından emin olun
+
+                
+                //çok karakter kullanımı engel
                 if (!/[\+\-\*\/%]$/.test(anaEkran.textContent.trim())) {
                     anaEkran.textContent += ` ${this.textContent} `;
                 }
             } else if (this.classList.contains("temizle")) {
+                
                 anaEkran.textContent = "0";
             } else if (this.classList.contains("esittir")) {
                 try {
@@ -45,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         islemGecmisi.shift();
                     }
                     for (let i = 0; i < sonIslemler.length; i++) {
+
+                        
                         sonIslemler[i].textContent = islemGecmisi[i] || "";
                     }
                     anaEkran.textContent = sonuc;
@@ -52,8 +59,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     anaEkran.textContent = "Hata";
                 }
             } else if (this.classList.contains("negate")) {
+                
                 if (anaEkran.textContent.startsWith("-")) {
+
+                    
                     anaEkran.textContent = anaEkran.textContent.substring(1);
+                    
                 } else {
                     anaEkran.textContent = "-" + anaEkran.textContent;
                 }
