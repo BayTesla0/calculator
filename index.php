@@ -14,7 +14,6 @@
                     <input type="checkbox" id="temaDegistir">
                     <span class="slider"></span>
                 </label>
-                <span class="light-mode-icon">🌞</span>
                 <span class="dark-mode-icon">🌜</span>
             </div>
             <button id="gecmisTusu">🕒</button>
@@ -31,7 +30,7 @@
 
 
             <button class="temizle">AC</button>
-            <button class="islem negate">±</button>
+            <button class="negate">±</button>
             <button class="islem">%</button>
             <button class="islem">/</button>
 

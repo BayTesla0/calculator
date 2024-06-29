@@ -18,7 +18,7 @@ body.lacivert-tema {
 
 }
 
-body.lacivert-tema .hesap-makinesi {
+body.lacivert-tema .hesap-makinesi  {
     background-color: #555;
 
 }
@@ -38,8 +38,10 @@ body.lacivert-tema .hesap-makinesi {
 
 }
 
-.light-mode-icon {
-    margin-left: 10px;
+
+
+.dark-mode-icon {
+    margin-right: 010px;
 }
 
 .switch {
@@ -56,7 +58,7 @@ body.lacivert-tema .hesap-makinesi {
 }
 
 .slider {
-    position: absolute;
+    position: absolute ;
     cursor: pointer;
     top: 0;
     left: 0;
@@ -80,7 +82,7 @@ body.lacivert-tema .hesap-makinesi {
 }
 
 input:checked + .slider {
-    background-color: #093558;
+    background-color: #02111d;
 }
 
 input:checked + .slider:before {
@@ -91,15 +93,18 @@ input:checked + .slider:before {
     border: none;
     border-radius: 100px;
     padding: 50px 10px;
-    cursor: pointer;        background-color: #faf9f9;
+    cursor: pointer;      
+      background-color: #faf9f9;
 
 }
 
 #gecmisTusu:hover {background-color:rgb(224, 224, 231);
 }
 
-#gecmisTusu.lacivert-tema {
+
+body.lacivert-tema #gecmisTusu   {
     background-color: #555;
+
 }
 
 
@@ -131,14 +136,15 @@ body.lacivert-tema .son-islemler {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    background-color: #7dceee;        background-image: url("aaaa.jpg");
+    background-color: #7dceee;        background-image: url("kaynak/lightmod.jpg");
 
     border-radius: 20px;
     padding: 20px;
 }
 
 body.lacivert-tema .buton-kutucugu {
-    background-color: #002147;background-image: url("aaa.jpg");
+    background-color: #002147;
+    background-image: url("");
 
 
 }
@@ -176,9 +182,4 @@ body.lacivert-tema .buton-kutucugu button:hover {
     background-color: #335b8e;
 }
 
-body::before {
-    content: url('kus-ikonu.png');
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+

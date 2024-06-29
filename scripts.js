@@ -52,17 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     anaEkran.textContent = "Hata";
                 }
             } else if (this.classList.contains("negate")) {
-            // Ekrandaki sayının işaretini değiştirmek için
-// Ekrandaki sayının işaretini değiştirmek için
-// Ekrandaki sayının işaretini değiştirmek için
-let ekranMetni = anaEkran.textContent;
-if (ekranMetni !== "0") {
-    anaEkran.textContent = (parseFloat(ekranMetni) * -1).toString();
-}
-
-
-
+                // Negate işlevi
+                let ekranIcerik = anaEkran.textContent;
+                if (ekranIcerik !== "0" && !ekranIcerik.includes(" ")) {
+                    anaEkran.textContent = parseFloat(ekranIcerik) * -1;
+                }
             }
+            
         });
     });
 });
