@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let islem3 = document.getElementById("islem3");
     let sonIslemler = [islem1, islem2, islem3];
 
-    let butonlar = document.querySelectorAll(".butonlar button");
+    let butonlar = document.querySelectorAll(".buton-kutucugu button");
     let islemGecmisi = [];
     let ekranDegeri = "";
 
@@ -31,7 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     anaEkran.textContent += this.textContent;
                 }
             } else if (this.classList.contains("islem")) {
-                anaEkran.textContent += ` ${this.textContent} `;
+                // Önceki karakterin bir işlem olmadığından emin olun
+                if (!/[\+\-\*\/%]$/.test(anaEkran.textContent.trim())) {
+                    anaEkran.textContent += ` ${this.textContent} `;
+                }
             } else if (this.classList.contains("temizle")) {
                 anaEkran.textContent = "0";
             } else if (this.classList.contains("esittir")) {
@@ -47,6 +50,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     anaEkran.textContent = sonuc;
                 } catch (e) {
                     anaEkran.textContent = "Hata";
+                }
+            } else if (this.classList.contains("negate")) {
+                if (anaEkran.textContent.startsWith("-")) {
+                    anaEkran.textContent = anaEkran.textContent.substring(1);
+                } else {
+                    anaEkran.textContent = "-" + anaEkran.textContent;
                 }
             }
         });

@@ -10,15 +10,17 @@ body.lacivert-tema {
 .hesap-makinesi {
     width: 300px;
     margin: 100px auto;
-    padding: 20px;
+    padding: 0px;
     border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1 10px rgba(0, 0, 0, 0.1);
+        background-color: #faf9f9;
+
+
 }
 
 body.lacivert-tema .hesap-makinesi {
-    background-color: #333;
-    color: white;
+    background-color: #555;
+
 }
 
 .ust-kisim {
@@ -32,7 +34,8 @@ body.lacivert-tema .hesap-makinesi {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 200%;
+
 }
 
 .light-mode-icon {
@@ -59,7 +62,7 @@ body.lacivert-tema .hesap-makinesi {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #2196f3;
     transition: .4s;
     border-radius: 34px;
 }
@@ -77,7 +80,7 @@ body.lacivert-tema .hesap-makinesi {
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+    background-color: #093558;
 }
 
 input:checked + .slider:before {
@@ -85,23 +88,26 @@ input:checked + .slider:before {
 }
 
 #gecmisTusu {
-    background-color: #2196f3;
-    color: white;
     border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
+    border-radius: 100px;
+    padding: 50px 10px;
+    cursor: pointer;        background-color: #faf9f9;
+
 }
 
-#gecmisTusu:hover {
-    background-color: #1976d2;
+#gecmisTusu:hover {background-color:rgb(224, 224, 231);
 }
+
+#gecmisTusu.lacivert-tema {
+    background-color: #555;
+}
+
 
 .ekran {
-    background-color: #ddd;
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    background-color: #faf9f9;
+    padding: 50px;
+    border-radius: 00px;
+    margin-bottom: 00px;
     text-align: right;
     font-size: 2em;
 }
@@ -117,36 +123,29 @@ body.lacivert-tema .ekran {
     display: none;
 }
 
+body.lacivert-tema .son-islemler {
+    color: white;
+}
+
 .buton-kutucugu {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #87ceeb;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #7dceee;        background-image: url("aaaa.jpg");
+
     border-radius: 20px;
     padding: 20px;
 }
 
 body.lacivert-tema .buton-kutucugu {
-    background-color: #002147;
+    background-color: #002147;background-image: url("p.jpg");
+
+
 }
 
-.islem-butonlari {
+.buton-kutucugu button {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.sayi-butonlari {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.islem-butonlari button, .sayi-butonlari button {
-    width: 22%;
-    margin: 1%;
-    padding: 20px;
+    height: 60px;
     font-size: 1.5em;
     border-radius: 50%;
     border: none;
@@ -154,26 +153,26 @@ body.lacivert-tema .buton-kutucugu {
     cursor: pointer;
 }
 
-body.lacivert-tema .islem-butonlari button, body.lacivert-tema .sayi-butonlari button {
+body.lacivert-tema .buton-kutucugu button {
     background-color: #1c3b70;
     color: white;
 }
 
-.butonlar .temizle {
-    background-color: #f44336;
-    color: white;
+.buton-kutucugu .temizle {
+    background-color: #faf9f9;
+    color: rgb(0, 0, 0);
 }
 
-.butonlar .esittir {
-    background-color: #4caf50;
-    color: white;
+.buton-kutucugu .esittir {
+    background-color: #faf9f9;
+    color: rgb(0, 0, 0);
 }
 
-.butonlar button:hover {
+.buton-kutucugu button:hover {
     background-color: #ddd;
 }
 
-body.lacivert-tema .butonlar button:hover {
+body.lacivert-tema .buton-kutucugu button:hover {
     background-color: #335b8e;
 }
 
