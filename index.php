@@ -28,8 +28,7 @@
             <div id="ana-ekran">0</div>
         </div>
         <div class="buton-kutucugu">
-        <div id="ana-ekran">0</div>
-        <div id="ana-ekran">0</div>
+
 
             <button class="temizle">AC</button>
             <button class="islem negate">±</button>
